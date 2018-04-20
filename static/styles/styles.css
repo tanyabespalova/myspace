@@ -1,0 +1,18 @@
+body {
+    background: hotpink;
+}
+a.btn-primary{
+    color: #686868;
+    user-select: none; /* Убираем текстовое выделение */
+    text-decoration: none;	/* Убираем подчеркивание */
+    outline: none; /* Убираем контур вокруг ссылки */
+    background-color: #faf1f7; /* Цвет фона */
+    padding: 0.25em 0.5em; /* Отступ от текста до рамки */
+}
+a.btn-primary:active {
+    background-color: #9495ee; /* Цвет кнопки при нажатии */
+}
+a.btn-primary:hover {
+    background-color: #b9b2f9; /* Цвет кнопки при наведении курсора */
+}
+
