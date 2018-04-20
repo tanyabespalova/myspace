@@ -29,10 +29,10 @@ class FruitService
 
   def to_csv
     CSV.generate do |csv|
-      csv << %w(Name Quantity Cost)
+      csv << %w(Name Quantity Price Discount)
 
       @fruits.each do |fruit|
-        csv << [fruit.name, fruit.quantity, fruit.discount]
+        csv << [fruit.name, fruit.quantity, fruit.price, fruit.discount.round(2)]
       end
     end
   end
